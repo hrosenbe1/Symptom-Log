@@ -34,5 +34,6 @@ module Symptom
     config.generators do |g|
       g.orm             :active_record
       g.template_engine :erb
+    end
   end
 end
