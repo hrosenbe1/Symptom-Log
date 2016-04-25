@@ -1,0 +1,56 @@
+<%= form_for(@log, html: { class: "form-horizontal", role: "form" }) do |f| %>
+  <% if @log.errors.any? %>
+    <div class="alert alert-danger alert-dismissable" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4><%= pluralize(@log.errors.count, "error") %> prohibited this log from being saved:</h4>
+
+      <ul>
+      <% @log.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :how_you_felt, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :how_you_felt, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :what_you_were_doing, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :what_you_were_doing, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :where_you_were, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :where_you_were, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :when_it_happened, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :when_it_happened, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :pain_level, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :pain_level, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :other, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :other, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

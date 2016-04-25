@@ -1,0 +1,39 @@
+<div class="page-header">
+  <%= link_to new_log_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Log
+  <% end %>
+  <h1>Here are your symptoms</h1>
+</div>
+
+<div class="table-responsive logs">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>How you felt</th>
+            <th>What you were doing</th>
+            <th>Where you were</th>
+            <th>When it happened</th>
+            <th>Pain level</th>
+            <th>Other</th>
+            <th>Show</th>
+            <th>Edit</th>
+            <th>Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @logs) do |log| %>
+            <td><%= log.how_you_felt %></td>
+            <td><%= log.what_you_were_doing %></td>
+            <td><%= log.where_you_were %></td>
+            <td><%= log.when_it_happened %></td>
+            <td><%= log.pain_level %></td>
+            <td><%= log.other %></td>
+            <td><%= link_to 'Show', log %></td>
+        <td><%= link_to 'Edit', edit_log_path(log) %></td>
+        <td><%= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
