@@ -1,4 +1,5 @@
 @import "bootstrap-variables.scss";
+@import "bootstrap-custom-variables.scss";
 @import "bootstrap-sprockets.scss";
 @import "bootstrap.scss";
 
@@ -16,8 +17,7 @@ body {
   }
 }
 
-input[type="radio"], input[type="checkbox"] {
-  width: initial;
-  height: initial;
-  margin-top: 7px;
+main {
+  margin: 20px auto;
+  width: 800px;
 }
