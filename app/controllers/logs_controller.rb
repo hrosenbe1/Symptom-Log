@@ -1,6 +1,7 @@
 class LogsController < ApplicationController
   before_action :signed_in_user
   before_action :set_log, only: [:show, :edit, :update, :destroy]
+  before_action :verify_correct_user, only: [:show, :edit, :update, :destroy]
 
 
   # GET /logs
@@ -74,4 +75,9 @@ class LogsController < ApplicationController
     def log_params
       params.require(:log).permit(:how_you_felt, :what_you_were_doing, :where_you_were, :when_it_happened, :pain_level, :other)
     end
+
+    def verify_correct_user
+       @log = current_user.logs.find_by(id: params[:id])
+       redirect_to root_url, notice: 'Access Denied!' if @log.nil?
+     end
 end
