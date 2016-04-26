@@ -1,10 +1,12 @@
 class LogsController < ApplicationController
+  before_action :signed_in_user
   before_action :set_log, only: [:show, :edit, :update, :destroy]
+
 
   # GET /logs
   # GET /logs.json
   def index
-    @logs = Log.order(created_at: :desc)
+    @logs = current_user.logs.order(created_at: :desc)
   end
 
   # GET /logs/1
@@ -25,6 +27,7 @@ class LogsController < ApplicationController
   # POST /logs.json
   def create
     @log = Log.new(log_params)
+    @log.user = current_user
 
     respond_to do |format|
       if @log.save
