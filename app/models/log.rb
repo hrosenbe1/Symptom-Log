@@ -1,12 +1,13 @@
 class Log < ActiveRecord::Base
-  validates :how_you_felt, presence: true
+  belongs_to :user
+  #validates :how_you_felt, presence: true
 
-  before_save :default_values
+  #before_save :default_values
 
-  private
+  #private
 
-  def default_values
-    self.completed ||= false
-    nil                           # required so that TX will not rollback!!!
-  end
+  #def default_values
+   # self.completed ||= false
+   # nil                           # required so that TX will not rollback!!!
+  #end
 end
