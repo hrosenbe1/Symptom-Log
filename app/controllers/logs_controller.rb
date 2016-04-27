@@ -73,7 +73,7 @@ class LogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def log_params
-      params.require(:log).permit(:how_you_felt, :what_you_were_doing, :where_you_were, :when_it_happened, :pain_level, :other)
+      params.require(:log).permit(:how_you_felt, :what_you_were_doing, :where_you_were, :when_it_happened, :pain_level, :other, :image)
     end
 
     def verify_correct_user

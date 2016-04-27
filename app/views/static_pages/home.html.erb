@@ -1,9 +1,18 @@
 <% provide(:title, 'Home') %>
-<div class="text-center jumbotron">
-  <h1>Welcome to the Symptom App</h1>
-  <h3>This is the home page for the Symptom App.</h3>
+<body class="homepic">
+<div class="home">
+  <h1>Welcome to Symptom Log</h1>
+  <h3 class="h3">Have everything you need for your doctor at the</h3>
+  <h3>click of a button.</h3>
   <br/>
 </div>
 <br/>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
   <%= link_to "Sign in",      signin_path, class: "btn btn-large btn-primary" %>
+</body>
+<footer class="footer" >
+<div class="checker" style="width: 400px;"><a href="http://symptoms.webmd.com/default.htm#introView" target="blank"><img src="http://kaahe.org/en/images/stories/symptom_en.jpg" height="300px" width="400px"></a></div>
+<a class="twitter-timeline" style="margin-top: -200px;" href="https://twitter.com/WebMD" data-widget-id="725161104603754497" width="300">Tweets by @WebMD</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</footer>
+

@@ -49,5 +49,9 @@ group :development, :test do
 
   # Better Rails Error Pages
   gem 'better_errors'
+
+  gem "paperclip", "~> 5.0.0.beta1"
+
+  gem 'aws-sdk', '~> 2'
 end
 

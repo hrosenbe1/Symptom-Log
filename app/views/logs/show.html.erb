@@ -29,6 +29,13 @@
   <dt>Other:</dt>
   <dd><%= @log.other %></dd>
 
+  <dt>Image:</dt>
+  <% if @log.image.file? %>
+  <td><%= image_tag @agent.avatar.url(:thumb) %></td>
+  <% else %>
+  No attachment available!
+  <% end %>
+
   <dt>Created:</dt>
   <dd><%= @log.created_at %></dd>
 
