@@ -1,11 +1,10 @@
 class AddAttachmentImageToLogs < ActiveRecord::Migration
-  def self.up
-    change_table :logs do |t|
-      t.attachment :image
+def up
+    add_attachment :logs, :image
     end
   end
 
-  def self.down
+  def down
     remove_attachment :logs, :image
   end
 end
