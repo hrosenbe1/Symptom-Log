@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'aws-sdk'
+
 gem "paperclip", "~> 5.0.0.beta1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -50,6 +52,5 @@ group :development, :test do
   # Better Rails Error Pages
   gem 'better_errors'
 
-  gem 'aws-sdk'
 end
 
