@@ -11,6 +11,7 @@
 }
 
 .home {
+  margin-top: 10px;
   background-color: white;
   height: 170px;
   width: 550px;
@@ -32,17 +33,24 @@
 float: right;
 margin-right: -200px;
 margin-bottom: -600px;
+margin-top: -150px;
 }
 
 .checker {
 float: left;
 margin-left: -200px;
+width: 400px;
+float: left;
 }
 
 .search {
   color: #236B8E;
-  margin-left: 250px;
+  margin-top: 75px;
+  margin-left: 75px;
+}
 
+.google {
+  margin-left: 25px;
 }
 
 
