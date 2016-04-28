@@ -4,7 +4,6 @@
 @import "bootstrap-sprockets.scss";
 @import "bootstrap.scss";
 @import "superhero.scss";
-
 body {
   padding-top: $navbar-height + 10px;
 }
@@ -13,14 +12,13 @@ body {
   a.btn {
     float: right;
   }
-
   a.btn + a.btn {
     margin-right: 8px;
+
   }
 }
 
 main {
   margin: 20px auto;
-  width: 800px;
+  width: 1000px;
 }
-

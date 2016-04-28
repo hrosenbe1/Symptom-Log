@@ -1,11 +1,8 @@
 // Superhero 3.2.0
 // Bootswatch
 // -----------------------------------------------------
-
 @import url($web-font);
-
 // Navbar =====================================================================
-
 .navbar {
   @include box-shadow(none);
   border: none;
@@ -13,7 +10,6 @@
 }
 
 .navbar-default {
-
   .badge {
     background-color: #fff;
     color: $navbar-default-bg;
@@ -21,7 +17,6 @@
 }
 
 .navbar-inverse {
-
   .badge {
     background-color: #fff;
     color: $navbar-inverse-bg;
@@ -29,9 +24,7 @@
 }
 
 // Buttons ====================================================================
-
 .btn {
-
   font-weight: 300;
 }
 
@@ -47,7 +40,6 @@
 }
 
 // Typography =================================================================
-
 body {
   font-weight: 300;
 }
@@ -82,11 +74,9 @@ body {
 }
 
 .dropdown-menu {
-
   border: none;
   margin: 0;
   @include box-shadow(none);
-
   > li > a {
     font-size: 12px;
     font-weight: 300;
@@ -102,20 +92,16 @@ body {
 }
 
 // Tables =====================================================================
-
 table,
 .table {
   font-size: 12px;
-
   a:not(.btn) {
     color: #fff;
     text-decoration: underline;
   }
-
   .text-muted {
     color: $text-muted;
   }
-
   > thead > tr > th,
   > tbody > tr > th,
   > tfoot > tr > th,
@@ -124,10 +110,9 @@ table,
   > tfoot > tr > td {
     border-color: transparent;
   }
- }
+}
 
 // Forms ======================================================================
-
 input,
 textarea {
   color: $input-color;
@@ -152,7 +137,6 @@ label,
   .form-control-feedback {
     color: $brand-warning;
   }
-
   .input-group-addon {
     border: none;
   }
@@ -164,7 +148,6 @@ label,
   .form-control-feedback {
     color: $brand-danger;
   }
-
   .input-group-addon {
     border: none;
   }
@@ -176,7 +159,6 @@ label,
   .form-control-feedback {
     color: $brand-success;
   }
-
   .input-group-addon {
     border: none;
   }
@@ -195,7 +177,6 @@ label,
 }
 
 // Navs =======================================================================
-
 .nav {
   .open > a,
   .open > a:hover,
@@ -223,14 +204,12 @@ label,
 }
 
 // Indicators =================================================================
-
 .label {
   font-weight: 300;
 }
 
 .alert {
   color: #fff;
-
   a,
   .alert-link {
     color: #fff;
@@ -239,7 +218,6 @@ label,
 
 .close {
   opacity: 0.4;
-
   &:hover,
   &:focus {
     opacity: 1;
@@ -247,9 +225,7 @@ label,
 }
 
 // Progress bars ==============================================================
-
 // Containers =================================================================
-
 .well {
   @include box-shadow(none);
 }
@@ -290,12 +266,13 @@ label,
 .navbar-default {
   background-color: #236B8E;
 }
+
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #05E9FF;
 }
 
 .btn:hover {
-    background-color: #05E9FF;
+  background-color: #05E9FF;
 }
 
 .navbar-brand {
@@ -312,4 +289,4 @@ a:hover {
 
 td a:hover {
   color: #05E9FF;
-  }
+}
