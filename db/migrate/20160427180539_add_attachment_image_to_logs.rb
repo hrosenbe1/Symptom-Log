@@ -1,9 +1,8 @@
 class AddAttachmentImageToLogs < ActiveRecord::Migration
 
-  include Paperclip::Schema
 
   def up
-    add_attachment :logs, :image
+    attachment :logs, :image
   end
 
 
@@ -11,3 +10,7 @@ class AddAttachmentImageToLogs < ActiveRecord::Migration
     remove_attachment :logs, :image
   end
 end
+
+include Paperclip::Schema
+
+
