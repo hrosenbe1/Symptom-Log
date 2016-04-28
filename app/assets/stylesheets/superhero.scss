@@ -290,6 +290,9 @@ label,
 .navbar-default {
   background-color: #236B8E;
 }
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #05E9FF;
+}
 
 .btn:hover {
     background-color: #05E9FF;

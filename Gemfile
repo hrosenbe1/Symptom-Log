@@ -52,6 +52,6 @@ group :development, :test do
 
   gem "paperclip", "~> 5.0.0.beta1"
 
-  gem 'aws-sdk', '~> 2'
+  gem 'aws-sdk'
 end
 
