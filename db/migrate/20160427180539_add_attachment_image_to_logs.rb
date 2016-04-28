@@ -2,7 +2,7 @@ class AddAttachmentImageToLogs < ActiveRecord::Migration
 
 
   def up
-    has_attached_file :logs, :image
+    add_attachment :logs, :image
   end
 
 
