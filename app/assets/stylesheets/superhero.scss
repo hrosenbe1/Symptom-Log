@@ -264,6 +264,10 @@ label,
   background-color: #236B8E;
 }
 
+.btn-primary:hover {
+  color: #236B8E;
+}
+
 //navbar color
 .navbar-default {
   background-color: #236B8E;
@@ -272,11 +276,23 @@ label,
 //right side navbar links hover color
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #05E9FF;
+  color: #236B8E;
 }
 
 //all buttons hover color
 .btn:hover {
   background-color: #05E9FF;
+}
+
+//back button
+.btn-default {
+  background-color: #236B8E;
+}
+
+//back button
+.btn-default:hover {
+  background-color: #05E9FF;
+  color: #236B8E;
 }
 
 //home text on navbar
