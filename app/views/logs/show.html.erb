@@ -7,9 +7,10 @@
     <span class="glyphicon glyphicon-pencil"></span>
     Edit
   <% end %>
-  <h1>Show log</h1>
+  <h1>Symptom Information</h1>
 </div>
 
+<div class="list">
 <dl class="dl-horizontal">
   <dt>Symptom:</dt>
   <dd><%= @log.how_you_felt %></dd>
@@ -29,10 +30,16 @@
   <dt>Other:</dt>
   <dd><%= @log.other %></dd>
 
-  <dt>Image:</dt>
-  <dd><%= image_tag @log.image.url(:large) %></dd>
-
   <dt>Created:</dt>
   <dd><%= @log.created_at %></dd>
+  </dl>
+  </div>
 
-</dl>
+
+  <div class="photo">
+  <dd><%= image_tag @log.image.url(:large) %></dd>
+  </div>
+
+
+
+
