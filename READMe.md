@@ -23,7 +23,7 @@ I chose to create Symptom Log as my first Ruby on Rails app. I think it is a gre
 - Styled with Bootstrat/SASS and Bootswatch
 - Embedded WebMD real time Twitter feed 
 
-##Wireframe
+##Wireframe:
 
 ![](./wireframes.jpg)
 
