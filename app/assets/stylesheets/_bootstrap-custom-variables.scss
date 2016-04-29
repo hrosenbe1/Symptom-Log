@@ -1,3 +1,4 @@
+//background photo in static_pages/home
 .homepic {
   background-color: #48484a;
   background: image-url('symptombground.jpg');
@@ -6,10 +7,12 @@
   background-color: #fff;
 }
 
+//deleted jumbotron in static_pages/home
 .jumbotron {
   opacity: 0.0;
 }
 
+//text header box in static_pages/home
 .home {
   margin-top: 20px;
   background-color: white;
@@ -22,14 +25,12 @@
   margin-left: 100px;
 }
 
-.what {
-  width: 168px;
-}
-
+//footer in static_pages/home
 .footer {
   margin-top: 50px;
 }
 
+//twitter widget in static_pages/home
 .twitter-timeline {
   float: right;
   margin-right: -100px;
@@ -37,6 +38,7 @@
   margin-top: -150px;
 }
 
+//symptom checker image in static_pages/home
 .checker {
   float: left;
   margin-left: -100px;
@@ -44,67 +46,81 @@
   float: left;
 }
 
+//header above google search bar in static_pages/home
 .search {
   color: #236B8E;
   margin-top: 75px;
   margin-left: 70px;
 }
 
+//google search bar in static_pages/home
 .google {
   margin-left: 25px;
 }
 
+//table titles in logs/index
 .size {
   font-size: 16px;
 }
 
+//log table content in logs/index
 .tbody {
   font-size: 16px;
 }
 
+//div class for sign in and sign up buttons on static_pages/home
 .sign {
   margin-left: 100px;
 }
 
+//all fields except title on sessions/new page
 .signin {
   margin-left: 260px;
   margin-top: 150px;
 }
 
+//view icon on logs/show page
 .show {
   height: 20px;
   width: 20px;
 }
 
+//edit icon on logs/show page
 .edit {
   height: 20px;
   width: 20px;
 }
 
+//delete icon on logs/show page
 .trash {
   height: 14px;
   width: 14px;
 }
 
+//image on logs/show page
 .photo {
   float:right;
   margin-top: 20px;
 }
 
+//dl class of all text under header on logs/show page
 .dl-horizontal dd {
   margin: none;
 }
 
+//div class of all text under header on logs/show page
 .list {
   float: left;
   padding-top: 20px;
 }
 
+//right side text on logs/show page
 dd {
   padding: 3px;
   width: 375px;
 }
 
+//left title text on logs/show page
 dt {
   padding: 3px;
 }

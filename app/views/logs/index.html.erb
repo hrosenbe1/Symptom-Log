@@ -10,31 +10,31 @@
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr class="size">
-            <th>Image</th>
-            <th>Symptom</th>
-            <th>What</th>
-            <th>Where</th>
-            <th>When</th>
-            <th>Pain</th>
-            <th>Other</th>
-            <th>View</th>
-            <th>Edit</th>
-            <th>Delete</th>
+        <th>Image</th>
+        <th>Symptom</th>
+        <th>What</th>
+        <th>Where</th>
+        <th>When</th>
+        <th>Pain</th>
+        <th>Other</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
 
     <tbody class="tbody">
       <%= content_tag_for(:tr, @logs) do |log| %>
-            <td><%= image_tag log.image.url(:thumb) %></td>
-            <td><%= log.how_you_felt %></td>
-            <td><%= log.what_you_were_doing %></td>
-            <td><%= log.where_you_were %></td>
-            <td><%= log.when_it_happened %></td>
-            <td><%= log.pain_level %></td>
-            <td><%= log.other %></td>
-            <td><%= link_to (image_tag("eye.png", :class=> 'show')), log %></a></td>
-            <td><%= link_to (image_tag("edit.png", :class=> 'edit')), edit_log_path(log) %></a></td>
-            <td><%= link_to (image_tag("trash.png", :class=> 'trash')), log, method: :delete, data: { confirm: 'Are you sure?' } %></a></td>
+        <td><%= image_tag log.image.url(:thumb) %></td>
+        <td><%= log.how_you_felt %></td>
+        <td><%= log.what_you_were_doing %></td>
+        <td><%= log.where_you_were %></td>
+        <td><%= log.when_it_happened %></td>
+        <td><%= log.pain_level %></td>
+        <td><%= log.other %></td>
+        <td><%= link_to (image_tag("eye.png", :class=> 'show')), log %></a></td>
+        <td><%= link_to (image_tag("edit.png", :class=> 'edit')), edit_log_path(log) %></a></td>
+        <td><%= link_to (image_tag("trash.png", :class=> 'trash')), log, method: :delete, data: { confirm: 'Are you sure?' } %></a></td>
       <% end %>
     </tbody>
   </table>

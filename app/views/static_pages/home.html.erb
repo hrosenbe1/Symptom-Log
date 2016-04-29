@@ -1,24 +1,26 @@
 <% provide(:title, 'Home') %>
 <body class="homepic">
-<div class="home">
-  <h1>Welcome to Symptom Log</h1>
-  <h3 class="h3">Have everything you need for your doctor at the</h3>
-  <h3>click of a button.</h3>
+  <div class="home">
+    <h1>Welcome to Symptom Log</h1>
+    <h3 class="h3">Have everything you need for your doctor at the</h3>
+    <h3>click of a button.</h3>
+    <br/>
+  </div>
   <br/>
-</div>
-<br/>
-<div class="sign">
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-  <%= link_to "Sign in",      signin_path, class: "btn btn-large btn-primary" %>
-</div>
+  <div class="sign">
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+    <%= link_to "Sign in",      signin_path, class: "btn btn-large btn-primary" %>
+  </div>
 </body>
 <footer class="footer" >
-<div class="checker" ><a href="http://symptoms.webmd.com/default.htm#introView" target="blank"><img src="http://kaahe.org/en/images/stories/symptom_en.jpg" height="300px" width="400px"></a></div>
-<div style="float:left">
-<h3 class="search">Find a doctor, hospital,<br>or health insurance.</h3>
-<form class="google" target="blank" method="get" action="http://www.google.com/search"> <input type="text" name="q" size="31" maxlength="255" value="" /> <input type="submit" value="Google Search" /></form>
-</div>
-<a class="twitter-timeline" href="https://twitter.com/WebMD" data-widget-id="725161104603754497" width="300" height="300">Tweets by @WebMD</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <div class="checker" >
+    <a href="http://symptoms.webmd.com/default.htm#introView" target="blank"><img src="http://kaahe.org/en/images/stories/symptom_en.jpg" height="300px" width="400px"></a>
+  </div>
+  <div style="float:left">
+    <h3 class="search">Find a doctor, hospital,<br>or health insurance.</h3>
+    <form class="google" target="blank" method="get" action="http://www.google.com/search"> <input type="text" name="q" size="31" maxlength="255" value="" /> <input type="submit" value="Google Search" /></form>
+  </div>
+  <a class="twitter-timeline" href="https://twitter.com/WebMD" data-widget-id="725161104603754497" width="300" height="300">Tweets by @WebMD</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </footer>
 

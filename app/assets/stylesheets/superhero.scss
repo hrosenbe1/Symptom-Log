@@ -259,25 +259,31 @@ label,
   border: none;
 }
 
+//all button colors
 .btn-primary {
   background-color: #236B8E;
 }
 
+//navbar color
 .navbar-default {
   background-color: #236B8E;
 }
 
+//right side navbar links hover color
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #05E9FF;
 }
 
+//all buttons hover color
 .btn:hover {
   background-color: #05E9FF;
 }
 
+//home text on navbar
 .navbar-brand {
   font-size: 12px;
 }
+
 
 a {
   color: #fff;

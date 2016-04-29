@@ -5,9 +5,9 @@
       <h4><%= pluralize(@log.errors.count, "error") %> prohibited this log from being saved:</h4>
 
       <ul>
-      <% @log.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+        <% @log.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>

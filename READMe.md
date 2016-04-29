@@ -15,6 +15,7 @@ I chose to create Symptom Log as my first Ruby on Rails app. I think it is a gre
 - Languages - HTML5, CSS3, Ruby on Rails
 - Project Planning & User Stories - [Trello](https://trello.com/b/tmtWzxK0/full-stack-app)
 - Sublime Text 3
+- Deployed to Heroku
 
 ##Bonus Features:
 
@@ -30,3 +31,4 @@ I chose to create Symptom Log as my first Ruby on Rails app. I think it is a gre
 
 - Make the app responsive
 - Work on CSS on form, show, and index pages
+- Add a delete user option
