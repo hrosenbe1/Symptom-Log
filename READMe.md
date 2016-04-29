@@ -34,3 +34,4 @@ I chose to create Symptom Log as my first Ruby on Rails app. I think it is a gre
 - Make the app responsive
 - Work on CSS on form, show, and index pages
 - Add a delete user option
+- Add a third model for dcotors. The user may choose which symptoms goes under which specialist.
