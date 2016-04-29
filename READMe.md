@@ -12,7 +12,7 @@ I chose to create Symptom Log as my first Ruby on Rails app. I think it is a gre
 
 ##Technologies Used:
 
-- Languages - HTML5, CSS3, Ruby on Rails, 
+- Languages - HTML5, CSS3, Ruby, Ruby on Rails, PostgreSQL 
 - Project Planning & User Stories - [Trello](https://trello.com/b/tmtWzxK0/full-stack-app)
 - Sublime Text 3
 - Deployed to Heroku
@@ -22,7 +22,7 @@ I chose to create Symptom Log as my first Ruby on Rails app. I think it is a gre
 ##Bonus Features:
 
 - Each user may upload a picture with each symptom
-- Styled with Bootstrat/SASS and Bootswatch
+- Styled with Bootstrap/SASS and Bootswatch
 - Embedded WebMD real time Twitter feed 
 
 ##Wireframe:
