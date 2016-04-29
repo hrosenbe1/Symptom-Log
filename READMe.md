@@ -24,6 +24,9 @@ I chose to create Symptom Log as my first Ruby on Rails app. I think it is a gre
 
 ##Wireframe
 
+![](./wireframes.jpg)
+
 ##Future Developments:
 
-- I would like to make the app responsive
+- Make the app responsive
+- Work on CSS on form, show, and index pages
