@@ -32,9 +32,9 @@
             <td><%= log.pain_level %></td>
             <td><%= log.other %></td>
             <td><%= image_tag log.image.url(:thumb) %></td>
-            <td><%= link_to 'Show', log %></td>
-            <td><%= link_to 'Edit', edit_log_path(log) %></td>
-            <td><%= link_to 'Delete', log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to (image_tag("eye.png", :class=> 'show')), log %></a></td>
+            <td><%= link_to (image_tag("edit.png", :class=> 'edit')), edit_log_path(log) %></a></td>
+            <td><%= link_to (image_tag("trash.png", :class=> 'trash')), log, method: :delete, data: { confirm: 'Are you sure?' } %></a></td>
       <% end %>
     </tbody>
   </table>
